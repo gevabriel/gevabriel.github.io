@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gibran's Profile Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/621e2dd331.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/profile.png" type="image/png">
+</head>
+
+<body>
+    <nav id="nav" class="p-2 navbar navbar-dark navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="./img/profile.png" alt="my-logo" width="36">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a id="home" class="nav-link hover-underline-animation" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="a-about" class="nav-link hover-underline-animation" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="a-project" class="nav-link hover-underline-animation" href="#project">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="a-contacts" class="nav-link hover-underline-animation" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main data-spy="scroll" data-target="nav" data-offset="0">
+        <section id="dashboard" class="d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in">
+            <h2>Hello 👋</h2>
+            <h2>I'm <span class="name">Gibran</span></h2>
+            <h2>Undergraduate Informatics Engineering Student at Brawijaya University</h2>
+            <p>This is My Profile Website!</p>
+            <div class="dash-btn">
+                <a class="btn" href="#about">About</a>
+                <a class="btn" href="#project">Projects</a>
+                <a class="btn" href="#contacts">Contact Me</a>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container d-flex justify-content-center align-items-center px-3" data-aos="zoom-out">
+                <img src="./img/profile.png" alt="">
+                <div class="about-text d-flex flex-column justify-content-center">
+                    <h2>About Me</h2>
+                    <p>My name is Gibran Hakim, an informatics engineering student at university of
+                        Brawijaya. I'm currently in my fifth semester pursuing a degree in Informatics Engineering. I am
+                        deeply passionate about
+                        technology, with particularly focus on data science and web development. My expertise extends to
+                        UI/UX design, where I
+                        excel in creating interfaces that prioritize user convenience. Alongside these skills, I also
+                        have interest in the field
+                        of cybersecurity. My diverse skill set reflects my commitment to exploring the intersection of
+                        technology and
+                        user-centered design, emphasizing secure solutions rooted in data-driven approaches. </p>
+                    <a class="btn" href="#contacts">Contact Me</a>
+                </div>
+            </div>
+        </section>
+        <section id="project" class="d-flex align-items-center flex-column">
+            <h1>Projects</h1>
+            <div class="bigP-container d-flex flex-wrap align-items-center">
+                <div class="p-container d-flex justify-content-center align-items-center" data-aos="fade-left">
+                    <img src="./img/jawdas.png" alt="JawDas" style="border-radius: 15px;">
+                    <div class="right-p d-flex flex-column">
+                        <h2>JawDas</h2>
+                        <h2>(Schedule Web)</h2>
+                        <p>JawDas is a platform that helps students plan their pre-KRS schedule. Through the features
+                            provided, JawDas allows
+                            setting class schedules after pre-KRS, making it easier for students to determine courses
+                            without schedule conflicts.</p>
+                        <a class="btn" href="https://github.com/gevabriel/jawdas" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="p-container d-flex justify-content-center align-items-center" data-aos="fade-right">
+                    <img src="./img/image-encryption.png" alt="Image Encryption" style="border-radius: 15px;">
+                    <div class="right-p d-flex flex-column">
+                        <h2>Image Encryption using RSA & AES</h2>
+                        <p>Image encryption using RSA and AES involves a dual-layered security approach. RSA, an
+                            asymmetric encryption algorithm, is employed for key exchange and encryption of the AES
+                            symmetric key, ensuring
+                            secure transmission.</p>
+                        <a class="btn" href="https://github.com/gevabriel/image_encryption_rsa_aes" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+                <div class="p-container d-flex justify-content-center align-items-center" data-aos="fade-up-left">
+                    <img src="./img/wisatamalang.png" alt="WisataMalang" style="border-radius: 15px;">
+                    <div class="right-p d-flex flex-column">
+                        <h2>WisataMalang (Tourism Web)</h2>
+                        <p>WisataMalang stands as the premier platform dedicated to uncovering the myriad hidden
+                            treasures nestled within the
+                            diverse array of tourist attractions sprawled across the enchanting landscape of Malang.</p>
+                        <a class="btn" href="https://github.com/gevabriel/WisataMalang" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+                <div class="p-container d-flex justify-content-center align-items-center" data-aos="fade-down-right">
+                    <img src="./img/flavory.png" alt="SurveyForm" style="border-radius: 15px;">
+                    <div class="right-p d-flex flex-column">
+                        <h2>Flavory</h2>
+                        <h2>(Recipe App)</h2>
+                        <p>Flavory is an app that is a loyal friend for culinary fans who want to explore the world of
+                            cooking more easily
+                            and creatively. With a collection of various food recipes and step-by-step guides, this
+                            application aims to help and
+                            make it easier for users in the world of cooking.</p>
+                        <a class="btn" href="https://eszw10.github.io/SurveyForm/" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="d-flex flex-column justify-content-center align-items-center" data-aos="zoom-in">
+            <h1>How to Reach me</h1>
+            <br>
+            <ul class="d-flex">
+                <li><a href="mailto:gibranhakim2@gmail.com" id="profile-link" target="_blank"><i
+                            class="fa fa-envelope"></i> Email</a></li>
+                <li><a href="https://www.instagram.com/gibranhakim_" id="profile-link" target="_blank"><i
+                            class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://github.com/gevabriel" id="profile-link" target="_blank"><i
+                            class="fab fa-github"></i>
+                        Github</a></li>
+                <li><a href="https://www.linkedin.com/in/gibranhakim" id="profile-link" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&#169; 2023 Gibran Hakim</p>
+        <ul class="d-flex">
+            <li><a href="https://twitter.com/gevabriel" id="profile-link" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://web.facebook.com/100080446606162" id="profile-link" target="_blank"><i
+                        class="fab fa-facebook-square"></i></a></li>
+            <li><a href="https://www.instagram.com/gibranhakim_" id="profile-link" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://github.com/gevabriel" id="profile-link" target="_blank"><i
+                        class="fab fa-github"></i></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/gibranhakim" id="profile-link" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Nunito:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,700&family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+    --bg1-: #171718;
+    --bg2-: #1C1E22;
+    --blanco-: #FFFFFF;
+    --border-: #26292D;
+    --primary-: #bd6b34;
+    --hover-: #914c1f;
+    --acento-: #85BFD1;
+    --gris: #A0A0A1;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'DM Sans', sans-serif;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg1-) !important;
+    color: var(--blanco-) !important;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: auto;
+    border-radius: 24px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-);
+    border-radius: 24px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hover-);
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 24px;
+}
+
+/* navbar */
+.hover-underline-animation {
+    position: relative;
+}
+
+.navbar {
+    background-color: var(--bg1-);
+}
+
+.nav-scrolled {
+    box-shadow: var(--primary-) 0px 3px 6px;
+    transition: 0.5s ease-out;
+}
+
+/* dashboard */
+#dashboard {
+    height: 100vh;
+    background-color: var(--bg1-);
+    color: var(--blanco-);
+    gap: 32px;
+    text-align: center;
+}
+
+#dashboard h1 {
+    font-weight: 700;
+    font-size: 5em;
+}
+
+#dashboard p {
+    font-size: 20px;
+}
+
+.name {
+    color: var(--primary-);
+}
+
+#dashboard .btn,
+#about .btn,
+#project .btn,
+.btn-1 {
+    padding: 16px 20px;
+    border-radius: 8px !important;
+    text-align: center;
+    width: 169px;
+    color: var(--blanco-);
+    background-color: var(--bg2-);
+    border: 1px solid var(--primary-);
+    font-size: 20px;
+    position: relative;
+    transition: 0.3s ease-out;
+    z-index: 1;
+}
+
+.dash-btn {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-1 {
+    background-color: var(--primary-);
+    height: 64px;
+    text-decoration: none;
+    border: none;
+}
+
+.btn-1:hover {
+    background-color: var(--hover-);
+    color: var(--blanco-)
+}
+
+/* About */
+#about {
+    height: 100vh;
+}
+
+#about .container {
+    border-radius: 8px;
+    background-color: var(--bg2-);
+    padding: 24px;
+    border: 1.5px solid var(--border-);
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto !important;
+    transition: all 0.4s ease;
+}
+
+.about-text {
+    gap: 20px;
+}
+
+.about-text h2 {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-);
+    font-size: 48px;
+    align-self: center;
+}
+
+.about-text p {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.container img {
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#about .container:hover {
+    box-shadow: var(--primary-) 0px 0px 0px 3px;
+}
+
+/* Project */
+#project {
+    gap: 80px;
+}
+
+#project h1 {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-);
+}
+
+.bigP-container {
+    justify-content: center;
+    gap: 50px;
+}
+
+.p-container {
+    background-color: var(--bg2-);
+    width: 700px;
+    height: 400px;
+    border: 1.5px solid var(--border-);
+    border-radius: 8px;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 30px;
+    transition: all 0.4s ease !important;
+}
+
+.p-container img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.p-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    border: 0.5px solid var(--primary-);
+}
+
+.p-container div p {
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Contact */
+#contacts {
+    height: 100vh;
+    transition: 0.3s ease-out;
+}
+
+li a,
+button a {
+    text-decoration: none;
+    color: var(--blanco-);
+}
+
+li a:hover {
+    color: var(--primary-);
+}
+
+#contacts p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    font-style: italic;
+}
+
+#contacts ul {
+    font-size: 30px;
+    gap: 40px;
+}
+
+#profile-link {
+    display: inline-block;
+    transition: 0.3s ease-out;
+}
+
+#profile-link:hover {
+    transform: translateY(8px);
+    color: var(--primary-);
+}
+
+/* footer */
+footer {
+    padding: 16px;
+    border-top: 0.5px solid var(--primary-);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul {
+    gap: 20px;
+}
+
+/* underline animation */
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out !important;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* btn-effect */
+.btn::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: var(--primary-);
+    overflow: hidden;
+}
+
+.btn:hover::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    overflow: hidden;
+    border-radius: 8px !important;
+}
+
+/* responsive breakpoints */
+
+@media only screen and (max-width:576px) {
+    #dashboard h1 {
+        font-size: 2.7rem;
+    }
+
+    #about .container {
+        max-width: 500px !important;
+    }
+
+    .about-text {
+        align-items: center;
+    }
+
+    .container img {
+        max-width: 300px;
+    }
+
+    .p-container {
+        width: 300px;
+        height: auto;
+        padding: 20px;
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+    .p-container img {
+        max-width: 250px;
+    }
+
+    .right-p {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-p p {
+        max-width: 250px;
+    }
+
+    #contacts ul {
+        font-size: 20px;
+        gap: 40px;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    #about .container {
+        max-width: 1200px;
+    }
+}
